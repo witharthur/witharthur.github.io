@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elevate Labs — Simple Responsive Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">Elevate<span>Labs</span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Build clean, responsive pages with pure HTML &amp; CSS</h1>
+        <p>Starter template demonstrating semantic HTML5, Flexbox/Grid layout, and media queries. No JavaScript
+          required.</p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#features">See Features</a>
+          <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <div class="features-grid">
+          <article class="card">
+            <h3>Semantic HTML5</h3>
+            <p>Uses <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
+              <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> for accessible structure.</p>
+          </article>
+          <article class="card">
+            <h3>Flexbox &amp; Grid</h3>
+            <p>Header uses Flexbox for alignment; this section uses CSS Grid for equal-height, responsive cards.</p>
+          </article>
+          <article class="card">
+            <h3>Responsive Nav</h3>
+            <p>Mobile-first design with a CSS-only hamburger menu that collapses on small screens.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container about-inner">
+        <div>
+          <h2 class="section-title">About This Template</h2>
+          <p>This lightweight starter is intentionally minimal so you can focus on the core of responsive design:
+            layout, spacing, and typography. It’s perfect for internships, tests, or quick demos.</p>
+          <ul class="bullets">
+            <li>HTML &amp; CSS only</li>
+            <li>Mobile-first media queries</li>
+            <li>Accessible color contrast &amp; focus styles</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Contact & Get in Touch</h2>
+        <div class="contact-wrapper">
+
+          <div class="contact-info">
+            <p>Have questions or feedback? Reach out to us via:</p>
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:hello@elevatelabs.com"
+                  class="contact-link">hello@elevatelabs.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+1234567890" class="contact-link">+1 (234) 567-890</a></li>
+              <li><strong>Address:</strong> 123 Innovation Way, Tech City</li>
+            </ul>
+          </div>
+
+          <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Elevate Labs. All rights reserved.</p>
+      <ul class="social">
+        <li><a href="#" aria-label="GitHub">GitHub</a></li>
+        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
